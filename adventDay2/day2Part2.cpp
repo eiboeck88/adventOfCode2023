@@ -10,7 +10,7 @@
 #include <sstream>
 
 void day2Part2::possibleGame() {
-    std::ifstream adventData("C:\\Users\\aeiboeck\\CLionProjects\\advent1\\recurces\\day2.txt");
+    std::ifstream adventData("C:\\Users\\aeiboeck\\CLionProjects\\advent1\\recurces\\day2Part2David.txt");
     int dataIndex = 0;
 
     std::vector<std::string> lines;
