@@ -15,4 +15,6 @@ add_executable(advent1 main.cpp
         adventDay3/day3.cpp
         adventDay3/day3.h
         adventDay3/day3Part2.cpp
-        adventDay3/day3Part2.h)
+        adventDay3/day3Part2.h
+        adventDay4/day4.cpp
+        adventDay4/day4.h)

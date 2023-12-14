@@ -91,6 +91,12 @@ build CMakeFiles/advent1.dir/adventDay3/day3Part2.cpp.obj: CXX_COMPILER__advent1
   OBJECT_DIR = CMakeFiles\advent1.dir
   OBJECT_FILE_DIR = CMakeFiles\advent1.dir\adventDay3
 
+build CMakeFiles/advent1.dir/adventDay4/day4.cpp.obj: CXX_COMPILER__advent1_unscanned_Debug C$:/Users/aeiboeck/CLionProjects/advent1/adventDay4/day4.cpp || cmake_object_order_depends_target_advent1
+  DEP_FILE = CMakeFiles\advent1.dir\adventDay4\day4.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\advent1.dir
+  OBJECT_FILE_DIR = CMakeFiles\advent1.dir\adventDay4
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target advent1
@@ -99,7 +105,7 @@ build CMakeFiles/advent1.dir/adventDay3/day3Part2.cpp.obj: CXX_COMPILER__advent1
 #############################################
 # Link the executable advent1.exe
 
-build advent1.exe: CXX_EXECUTABLE_LINKER__advent1_Debug CMakeFiles/advent1.dir/main.cpp.obj CMakeFiles/advent1.dir/adventDay1/day1.cpp.obj CMakeFiles/advent1.dir/adventDay1/day1Part2.cpp.obj CMakeFiles/advent1.dir/adventDay2/day2.cpp.obj CMakeFiles/advent1.dir/adventDay2/day2Part2.cpp.obj CMakeFiles/advent1.dir/adventDay3/day3.cpp.obj CMakeFiles/advent1.dir/adventDay3/day3Part2.cpp.obj
+build advent1.exe: CXX_EXECUTABLE_LINKER__advent1_Debug CMakeFiles/advent1.dir/main.cpp.obj CMakeFiles/advent1.dir/adventDay1/day1.cpp.obj CMakeFiles/advent1.dir/adventDay1/day1Part2.cpp.obj CMakeFiles/advent1.dir/adventDay2/day2.cpp.obj CMakeFiles/advent1.dir/adventDay2/day2Part2.cpp.obj CMakeFiles/advent1.dir/adventDay3/day3.cpp.obj CMakeFiles/advent1.dir/adventDay3/day3Part2.cpp.obj CMakeFiles/advent1.dir/adventDay4/day4.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\advent1.dir
