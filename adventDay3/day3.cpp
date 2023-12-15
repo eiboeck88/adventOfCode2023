@@ -5,7 +5,6 @@
 #include "day3.h"
 #include <iostream>
 #include <fstream>
-#include <sstream>
 #include <valarray>
 
 void day3::dataFeeder() {
