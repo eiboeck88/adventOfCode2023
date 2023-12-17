@@ -1,25 +1,22 @@
 //
-// Created by aeiboeck on 15.12.2023.
+// Created by alex on 17.12.23.
 //
 
-#ifndef ADVENT1_DAY5_H
-#define ADVENT1_DAY5_H
-
-#include <iostream>
-#include <fstream>
+#ifndef ADVENT_DAY5_H
+#define ADVENT_DAY5_H
 #include <vector>
+#include <iostream>
+#include <string>
 #include <sstream>
-#include <regex>
-
-
+#include <fstream>
 
 class day5 {
 public:
-    void dataFeeder();
-    std::vector<std::vector<int>> seperateData(std::vector<std::string> data);
-    //std::vector<std::vector<int>> calculateRanges(std::vector<std::vector<int>> data);
-    int getCorrosPonding(int seed, std::vector<std::vector<int>> data);
+    std::vector<int> findSeedData(std::string data);
+    void day5Run();
+    void eraseLines(int currentLine, std::vector<std::string> &data);
+    std::vector<int> mapSeed(std::vector<int> seedData, std::vector<std::string> &data);
 };
 
 
-#endif //ADVENT1_DAY5_H
+#endif //ADVENT_DAY5_H
