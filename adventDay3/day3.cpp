@@ -8,7 +8,7 @@
 #include <valarray>
 
 void day3::dataFeeder() {
-    std::ifstream adventData("C:\\Users\\aeiboeck\\CLionProjects\\advent1\\recurces\\day3.txt");
+    std::ifstream adventData("C:\\Users\\aeiboeck\\CLionProjects\\advent1\\recurces\\day3david.txt");
 
     std::vector<std::string> lines;
     std::string currentLine;

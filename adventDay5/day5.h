@@ -12,10 +12,11 @@
 
 class day5 {
 public:
-    std::vector<int> findSeedData(std::string data);
-    void day5Run();
-    void eraseLines(int currentLine, std::vector<std::string> &data);
-    std::vector<int> mapSeed(std::vector<int> seedData, std::vector<std::string> &data);
+
+    void dataFeeder();
+    std::vector<long long> calculateSeedMap(std::vector<std::vector<long long>> seedMapRange, std::vector<long long> seedData);
+    std::vector<long long> extractSeedData(std::string rawSeedData);
+    long long findSmallestLocation(std::vector<long long> seedData);
 };
 
 

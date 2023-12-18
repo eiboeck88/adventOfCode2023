@@ -17,4 +17,8 @@ add_executable(advent1 main.cpp
         adventDay3/day3Part2.cpp
         adventDay3/day3Part2.h
         adventDay5/day5.h
-        adventDay5/day5.cpp)
+        adventDay5/day5.cpp
+        adventDay5/day5Part2.cpp
+        adventDay5/day5Part2.h
+        adventDay5/mapRange.cpp
+        adventDay5/mapRange.h)
