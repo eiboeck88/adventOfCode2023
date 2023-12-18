@@ -18,10 +18,12 @@ void day5Part2::dataFeeder() {
     }
 
     seeds = extractSeedData(originalData[0]);
+    originalData.erase(originalData.begin(), originalData.begin() + 1);
 
 
     mapRange testRange;
     testRange.setData(52, 50, 48);
+
     for (int yay = 0; yay < seeds.size(); yay ++) {
         if (seeds[yay] > testRange.getRangeStart(0) && seeds[yay] < testRange.getRangeEnd(0)){
             seeds[yay] = testRange.translateData(seeds[yay], 0);
@@ -32,6 +34,11 @@ void day5Part2::dataFeeder() {
         std::cout << yes << " its me yay" << std::endl;
     }
 }
+
+
+
+
+
 
 std::vector<long long> day5Part2::extractSeedData(std::string rawSeedData) {
     std::istringstream dataStream(rawSeedData);
