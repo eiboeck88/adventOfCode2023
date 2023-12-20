@@ -9,15 +9,16 @@
 #include <string>
 #include <sstream>
 #include <fstream>
+#include "mapRange.h"
+#include <istream>
 
 class day5Part2 {
 public:
 
     void dataFeeder();
     std::vector<long long> extractSeedData(std::string rawSeedData);
-//    long long calculateSeedMap(std::vector <std::vector<long long>> seedMapRange, long long seedData);
-//    long long findSmallestLocation(std::vector<long long> seedData);
-//    std::vector<long long> convertSeedDataIntoRanges(std::vector<long long> seedData);
+    std::vector<std::vector<mapRange>> convertSeedDataIntoRanges(std::vector<std::string> seedData);
+    long long findLowestLocatrionOfRange(long long rangeStart, long long rangeEnd, long long stepSize, std::vector<std::vector<mapRange>> rangeMap);
 };
 
 

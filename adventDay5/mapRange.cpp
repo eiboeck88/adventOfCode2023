@@ -5,20 +5,43 @@
 #include <iostream>
 #include "mapRange.h"
 
-void mapRange::setData(long long rangeStart, long long possibleRange, long long range){
-    std::vector<long long> temp = {rangeStart, rangeStart + range, possibleRange};
-    internalData.push_back(temp);
+void mapRange::setData(long long rangeStartToSet, long long originalRangeToSet, long long rangeToSet) {
+    rangeStart = rangeStartToSet;
+    rangeEnd = rangeStartToSet + rangeToSet;
+    originalRangeStart = originalRangeToSet;
+    originalRangeEnd = originalRangeToSet + rangeToSet;
 }
 
-long long mapRange::translateData(long long numberToConvert, int index) {
-    std::cout << internalData[index][0] << " " << numberToConvert << " " << internalData[index][0] << std::endl;
-    return internalData[index][0] + (numberToConvert - internalData[index][2]);
+long long mapRange::findnewRangeStart(long long rangeStartToCheck) {
+    if(rangeStartToCheck > originalRangeStart){
+        return translateData(rangeStartToCheck);
+    }
+    return rangeStart;
 }
 
-long long mapRange::getRangeStart(int index) {
-    return internalData[index][0];
+long long mapRange::findNewRangeEnd(long long rangeEndToCheck) {
+    if(rangeEndToCheck < originalRangeEnd){
+        return translateData(rangeEndToCheck);
+    }
+    return translateData(rangeEnd);
 }
 
-long long mapRange::getRangeEnd(int index) {
-    return internalData[index][1];
+long long mapRange::translateData(long long numberToConvert) {
+    return rangeStart + (numberToConvert - originalRangeStart);
+}
+
+long long mapRange::getRangeEnd() {
+    return rangeEnd;
+}
+
+long long mapRange::getOriginalRangeEnd() {
+    return originalRangeEnd;
+}
+
+long long mapRange::getRangeStart() {
+    return rangeStart;
+}
+
+long long mapRange::getOriginalRangeStart() {
+    return originalRangeStart;
 }

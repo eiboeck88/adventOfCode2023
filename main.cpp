@@ -9,13 +9,10 @@
 #include "adventDay3/day3Part2.h"
 #include "adventDay5/day5.h"
 #include "adventDay5/day5Part2.h"
-//wrong 51427
 
 int main() {
-    day5Part2 currentDay;
+    day3Part2 currentDay;
     currentDay.dataFeeder();
-
-
 }
 
 

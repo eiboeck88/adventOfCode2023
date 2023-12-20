@@ -10,7 +10,7 @@
 #include <vector>
 
 void day3Part2::dataFeeder() {
-    std::ifstream adventData("C:\\Users\\aeiboeck\\CLionProjects\\advent1\\recurces\\day3.txt");
+    std::ifstream adventData("C:\\Users\\aeiboeck\\CLionProjects\\advent1\\recurces\\day3Part2Jonas");
 
     std::vector<std::string> lines;
     std::string currentLine;
@@ -61,11 +61,11 @@ int day3Part2::calculatePartNumbers(std::string data, std::string lineAbove, std
             std::string tempData[] = {"", "", "", "","",""};
 
             int currentLine = 0;
-            for (int lineIterator = lineIterationStart;
-                 lineIterator < (sizeof(lines) / sizeof(lines[0])) - lineIteratrionEnd; lineIterator++) {
+            for (int lineIterator = lineIterationStart; lineIterator < (sizeof(lines) / sizeof(lines[0])) - lineIteratrionEnd; lineIterator++) {
                 int tempIterator = dataIterator;
                 int tempIncrement = -1;
                 bool secondNumber = false;
+
                 while (true) {
                     if (tempIncrement == 1 && tempIterator > dataIterator && !isdigit(lines[lineIterator].at(tempIterator))) {
                         break;
@@ -76,6 +76,7 @@ int day3Part2::calculatePartNumbers(std::string data, std::string lineAbove, std
                     if (tempIncrement == -1 && !isdigit(lines[lineIterator].at(tempIterator)) && tempIterator < dataIterator) {
                         tempIncrement = 1;
                     }
+
                     if (tempIncrement == 1) {
                         if (tempIterator == dataIterator && !tempData[0 + currentLine].empty() && !isdigit(lines[lineIterator].at(tempIterator))) {
                             secondNumber = true;
@@ -95,6 +96,7 @@ int day3Part2::calculatePartNumbers(std::string data, std::string lineAbove, std
 
                 }
                 currentLine += 2;
+
             }//bug at iteratrion 18
 
             int tempResultCount = 0;
